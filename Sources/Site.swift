@@ -19,6 +19,7 @@ struct ExampleSite: Site {
     var language: Language = .japanese
     var url = URL(static: "https://www.nunawa.net")
     var builtInIconsEnabled = true
+    var favicon = URL(string: "/images/favicon.png")
 
     var author = "nunawa"
 
