@@ -108,6 +108,11 @@ struct Home: StaticPage {
             }
             .target(.blank)
             .font(.title4)
+            Link(target: "https://buymeacoffee.com/nunawa") {
+                Image(systemName: "cup-hot", description: "Buy Me a Coffee")
+            }
+            .target(.blank)
+            .font(.title4)
         }
         .margin(.top)
     }
