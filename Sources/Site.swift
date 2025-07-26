@@ -14,7 +14,7 @@ struct IgniteWebsite {
     }
 }
 
-struct ExampleSite: Site {    
+struct ExampleSite: Site {
     var name = "www.nunawa.net"
     var language: Language = .japanese
     var url = URL(static: "https://www.nunawa.net")

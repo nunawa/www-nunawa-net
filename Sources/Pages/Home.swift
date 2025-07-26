@@ -28,18 +28,19 @@ struct Home: StaticPage {
                     .cornerRadius(100)
             }
             .horizontalAlignment(.center)
-            
+
             Section {
                 Text("nunawa")
                     .font(.title4)
                 Text("Software Engineer")
                     .font(.title6)
-                Text("""
-                    ソフトウェアエンジニアとして活動しています。iOSアプリ開発やRuby on Railsを使ったWeb開発の経験があり、実務では2年のキャリアを積んでいます。
-                    業務外でも個人開発を継続的に行っており、最新技術のキャッチアップを楽しんでいます。
-                    このサイトでは私が作成したプロジェクトを紹介しています。
-                    何か質問やコラボレーションのお誘いなどがありましたら、お気軽にご連絡ください。
-                """)
+                Text(
+                    """
+                        ソフトウェアエンジニアとして活動しています。iOSアプリ開発やRuby on Railsを使ったWeb開発の経験があり、実務では2年のキャリアを積んでいます。
+                        業務外でも個人開発を継続的に行っており、最新技術のキャッチアップを楽しんでいます。
+                        このサイトでは私が作成したプロジェクトを紹介しています。
+                        何か質問やコラボレーションのお誘いなどがありましたら、お気軽にご連絡ください。
+                    """)
             }
             .frame(minWidth: 300)
         }
@@ -53,8 +54,12 @@ struct Home: StaticPage {
                 Text("Amazonで商品を探しやすくするブラウザ拡張機能。2000人以上のユーザーに利用されています。")
             } header: {
                 Text {
-                    Link("Condler", target: "https://chromewebstore.google.com/detail/condler/ejjdbndmmongojeafjlilnchmkppbeap")
-                        .target(.blank)
+                    Link(
+                        "Condler",
+                        target:
+                            "https://chromewebstore.google.com/detail/condler/ejjdbndmmongojeafjlilnchmkppbeap"
+                    )
+                    .target(.blank)
                 }
                 .font(.title4)
             }
